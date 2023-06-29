@@ -1,0 +1,114 @@
+[
+    {
+      "model": "bodegas.region",
+      "pk": 1,
+      "fields": {
+        "region": "Arica y Parinacota"
+      }
+    },
+    {
+      "model": "bodegas.region",
+      "pk": 2,
+      "fields": {
+        "region": "Tarapacá"
+      }
+    },
+    {
+      "model": "bodegas.region",
+      "pk": 3,
+      "fields": {
+        "region": "Antofagasta"
+      }
+    },
+    {
+      "model": "bodegas.region",
+      "pk": 4,
+      "fields": {
+        "region": "Atacama"
+      }
+    },
+    {
+      "model": "bodegas.region",
+      "pk": 5,
+      "fields": {
+        "region": "Coquimbo"
+      }
+    },
+    {
+      "model": "bodegas.region",
+      "pk": 6,
+      "fields": {
+        "region": "Valparaíso"
+      }
+    },
+    {
+      "model": "bodegas.region",
+      "pk": 7,
+      "fields": {
+        "region": "Metropolitana de Santiago"
+      }
+    },
+    {
+      "model": "bodegas.region",
+      "pk": 8,
+      "fields": {
+        "region": "Libertador General Bernardo O'Higgins"
+      }
+    },
+    {
+      "model": "bodegas.region",
+      "pk": 9,
+      "fields": {
+        "region": "Maule"
+      }
+    },
+    {
+      "model": "bodegas.region",
+      "pk": 10,
+      "fields": {
+        "region": "Ñuble"
+      }
+    },
+    {
+      "model": "bodegas.region",
+      "pk": 11,
+      "fields": {
+        "region": "Biobío"
+      }
+    },
+    {
+      "model": "bodegas.region",
+      "pk": 12,
+      "fields": {
+        "region": "Araucanía"
+      }
+    },
+    {
+      "model": "bodegas.region",
+      "pk": 13,
+      "fields": {
+        "region": "Los Ríos"
+      }
+    },
+    {
+      "model": "bodegas.region",
+      "pk": 14,
+      "fields": {
+        "region": "Los Lagos"
+      }
+    },
+    {
+      "model": "bodegas.region",
+      "pk": 15,
+      "fields": {
+        "region": "Aysén del General Carlos Ibáñez del Campo"
+      }
+    },
+    {
+      "model": "bodegas.region",
+      "pk": 16,
+      "fields": {
+        "region": "Magallanes y de la Antártica Chilena"
+      }
+    }
+  ]
