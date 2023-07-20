@@ -1,0 +1,72 @@
+[
+    {
+      "model": "productos.autor",
+      "pk": 1,
+      "fields": {
+        "nombre": "Stephen King"
+      }
+    },
+    {
+      "model": "productos.autor",
+      "pk": 2,
+      "fields": {
+        "nombre": "Gabriel García Márquez"
+      }
+    },
+    {
+      "model": "productos.autor",
+      "pk": 3,
+      "fields": {
+        "nombre": "William Shakespeare"
+      }
+    },
+    {
+      "model": "productos.autor",
+      "pk": 4,
+      "fields": {
+        "nombre": "George Orwell"
+      }
+    },
+    {
+      "model": "productos.autor",
+      "pk": 5,
+      "fields": {
+        "nombre": "Herman Melville"
+      }
+    },
+    {
+      "model": "productos.autor",
+      "pk": 6,
+      "fields": {
+        "nombre": "Jane Austen"
+      }
+    },
+    {
+      "model": "productos.autor",
+      "pk": 7,
+      "fields": {
+        "nombre": "Bram Stoker"
+      }
+    },
+    {
+      "model": "productos.autor",
+      "pk": 8,
+      "fields": {
+        "nombre": "Suzanne Collins"
+      }
+    },
+    {
+      "model": "productos.autor",
+      "pk": 9,
+      "fields": {
+        "nombre": "William Shakespeare"
+      }
+    },
+    {
+      "model": "productos.autor",
+      "pk": 10,
+      "fields": {
+        "nombre": "Mary Shelley"
+      }
+    }
+  ]

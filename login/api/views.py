@@ -1,3 +1,4 @@
+from base64 import b64decode
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from rest_framework.exceptions import AuthenticationFailed
@@ -25,7 +26,6 @@ class UserLogin(APIView):
         
         now = datetime.datetime.utcnow()
         expiration = now + datetime.timedelta(minutes=60)
-        
         payload = {
             'username': user.username,
             'cargo': user.cargo.cargo,
@@ -36,36 +36,40 @@ class UserLogin(APIView):
         }
         token = jwt.encode(payload, 'secret', algorithm='HS256')
         response = Response()
-        
         response.set_cookie(key='jwt', value=token, httponly=True)
         response.data = {
             'jwt': token
         }
-        
-        print(response.data)
-        
-        print(response)
         return response
         
 class UserView(APIView):
     def get(self, request):
+        jwt_options = {
+        'verify_signature': False,
+        'verify_exp': True,
+        'verify_nbf': False,
+        'verify_iat': True,
+        'verify_aud': False
+        }
         token = request.COOKIES.get('jwt')
-        print('Token recibido:', token)
+        print('token')
         if not token:
             raise AuthenticationFailed('No está autenticado')
         
         try:
-            payload = jwt.decode(token, 'secret', algorithms=['HS256'])
+            payload = jwt.decode(token, 'secret', algorithms=['HS256'], options=jwt_options)
         except jwt.ExpiredSignatureError:
             raise AuthenticationFailed('No está autenticado')
-        
-        # Verificar si el token pertenece al usuario actual
-        if payload['username'] != request.user.username:
-            raise AuthenticationFailed('Token inválido para este usuario')
+
         
         # Aquí puedes realizar las acciones adicionales que necesites con el usuario autenticado
         
-        return Response("Usuario autenticado correctamente")
+        return Response({
+            'username': payload['username'],
+            'cargo': payload['cargo'],
+            'nombre': payload['nombre'],
+            'apellido': payload['apellido'],
+        })
     
 class UserLogout(APIView):
     def post(self, request):

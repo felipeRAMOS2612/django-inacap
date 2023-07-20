@@ -1,0 +1,93 @@
+[
+    {
+      "model": "productos.libro",
+      "pk": 1,
+      "fields": {
+        "nombre": "It",
+        "tipo": 3,
+        "editorial": 1
+      }
+    },
+    {
+      "model": "productos.libro",
+      "pk": 2,
+      "fields": {
+        "nombre": "Cien años de soledad",
+        "tipo": 1,
+        "editorial": 1
+      }
+    },
+    {
+      "model": "productos.libro",
+      "pk": 3,
+      "fields": {
+        "nombre": "Hamlet",
+        "tipo": 2,
+        "editorial": 3
+      }
+    },
+    {
+      "model": "productos.libro",
+      "pk": 4,
+      "fields": {
+        "nombre": "1984",
+        "tipo": 3,
+        "editorial": 2
+      }
+    },
+    {
+      "model": "productos.libro",
+      "pk": 5,
+      "fields": {
+        "nombre": "Moby-Dick",
+        "tipo": 1,
+        "editorial": 3
+      }
+    },
+    {
+      "model": "productos.libro",
+      "pk": 6,
+      "fields": {
+        "nombre": "Orgullo y prejuicio",
+        "tipo": 2,
+        "editorial": 2
+      }
+    },
+    {
+      "model": "productos.libro",
+      "pk": 7,
+      "fields": {
+        "nombre": "Drácula",
+        "tipo": 3,
+        "editorial": 3
+      }
+    },
+    {
+      "model": "productos.libro",
+      "pk": 8,
+      "fields": {
+        "nombre": "Los juegos del hambre",
+        "tipo": 1,
+        "editorial": 2
+      }
+    },
+    {
+      "model": "productos.libro",
+      "pk": 9,
+      "fields": {
+        "nombre": "Romeo y Julieta",
+        "tipo": 2,
+        "editorial": 3
+      }
+    },
+    {
+      "model": "productos.libro",
+      "pk": 10,
+      "fields": {
+        "nombre": "Frankenstein",
+        "tipo": 3,
+        "editorial": 2
+      }
+    }
+  ]
+  
