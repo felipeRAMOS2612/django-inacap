@@ -1,4 +1,12 @@
-# Título del Proyecto
+# ¡LEER IMPORTANTE!
+Aquí están los integrantes del grupo:
+
+    - Felipe Ramos
+    - Javiera Vera
+    - Pablo Quinteros
+    - Israel Franco
+
+## Título del Proyecto
 Sistema de Inventario de Librería "El Gran Poeta"
 
 ## Descripción del Proyecto
