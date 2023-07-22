@@ -8,13 +8,26 @@ class BodegasSerializer(serializers.ModelSerializer):
         model = bodega
         fields = ['id','nombre', 'region', 'region_nombre']
         
-class BodegaProductoSerializer(serializers.ModelSerializer):
-    bodega_origen_nombre = serializers.CharField(source='bodega_origen.nombre', required=False)
-    bodega_destino_nombre = serializers.CharField(source='bodega_destino.nombre', required=False)
-    producto_nombre = serializers.CharField(source='producto.nombre', required=False)
+class DetalleMovimientoSerializer(serializers.ModelSerializer):
     class Meta:
-        model = bodegaProducto
-        fields = ['bodega_origen', 'bodega_destino', 'producto', 'cantidad', 'bodega__origen_nombre', 'bodega_destino_nombre', 'producto_nombre']
+        model = DetalleMovimiento
+        fields = ('bodega_producto', 'cantidad')
+
+class MovimientoBodegaSerializer(serializers.ModelSerializer):
+    detalles = DetalleMovimientoSerializer(many=True)
+
+    class Meta:
+        model = MovimientoBodega
+        fields = ('bodega_origen', 'bodega_destino', 'usuario', 'fecha', 'detalles')
+
+    def create(self, validated_data):
+        detalles_data = validated_data.pop('detalles')
+        movimiento = MovimientoBodega.objects.create(**validated_data)
+
+        for detalle_data in detalles_data:
+            DetalleMovimiento.objects.create(movimiento=movimiento, **detalle_data)
+
+        return movimiento
 
 class regionesSerializer(serializers.ModelSerializer):
     class Meta:
