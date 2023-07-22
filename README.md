@@ -69,7 +69,7 @@ Proyecto en fase beta en espera de evaluación de docente.
 
 ## Notas adicionales: 📝
 
-- Este proyecto es una primera aproximación a un sistema de inventario para la librería "El Gran Poeta". A medida que avanza el desarrollo, se pueden agregar más funcionalidades y mejoras para satisfacer las necesidades específicas del usuario.
+- Este proyecto es una primera aproximación a un sistema de inventario para la librería "El Gran Poeta". A medida que avanza el desarrollo, se pueden agregar más funcionalidades y mejoras para satisfacer las necesidades específicas del usuario así como también arreglar detalles de errores y optimización de codigo.
 
 - Se han implementado mecanismos de autenticación y validación de usuarios para garantizar que solo los usuarios (Jefes de bodegas y bodegueros) autorizados puedan acceder y manipular la información del inventario.
 
